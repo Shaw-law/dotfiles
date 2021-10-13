@@ -13,7 +13,9 @@ return require('packer').startup(function()
   }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use {'dracula/vim', as = 'dracula'}
-  
+  use 'mfussenegger/nvim-jdtls'
+  use 'arcticicestudio/nord-vim'
+  use 'mhartington/formatter.nvim'
   use 'kabouzeid/nvim-lspinstall'
   use 'neovim/nvim-lspconfig'
   use 'nvim-lua/diagnostic-nvim'

@@ -10,7 +10,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 
-cmd('colorscheme molokai')            -- Put your favorite colorscheme here
+cmd('colorscheme nord')            -- Put your favorite colorscheme here
 opt.completeopt = {'menuone', 'noinsert', 'noselect'}  -- Completion options (for deoplete)
 opt.expandtab = true                -- Use spaces instead of tabs
 opt.hidden = true                   -- Enable background buffers

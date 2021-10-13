@@ -21,11 +21,14 @@ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true})
 map('n', '<C-l>', '<cmd>noh<CR>')    -- Clear highlights
 map('n', '<leader>o', 'm`o<Esc>``')  -- Insert a newline in normal mode
 
-map('i', 'jk', '<esc>') --map jk to escape
-map('n', '<C-a>', '<cmd>term<CR>') --terminal
+map('i', 'jk', '<Esc>') --map jk to escape
+map('n', '<C-a>', '<cmd>vnew term://zsh<CR>') --terminal
 map('n', '<C-b>', '<cmd>NvimTreeToggle<CR>') --Nvim Tree Toggle
 
 --Tabs configurations
 map('n', '<C-n>', '<cmd>tabnew<CR>') --Creates a new tab
 map('n', '<C-j>', '<cmd>bprev<CR>') --Creates a new tab
 map('n', '<C-k>', '<cmd>bnext<CR>') --Creates a new tab
+map('n', '<C-c>', '<cmd>tabclose<CR>') --Creates a new tab
+
+map('n', '<C-f>', '<cmd>Format<CR>') --format the code
