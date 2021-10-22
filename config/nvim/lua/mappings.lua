@@ -27,8 +27,6 @@ map('n', '<C-b>', '<cmd>NvimTreeToggle<CR>') --Nvim Tree Toggle
 
 --Tabs configurations
 map('n', '<C-n>', '<cmd>tabnew<CR>') --Creates a new tab
-map('n', '<C-j>', '<cmd>bprev<CR>') --Creates a new tab
-map('n', '<C-k>', '<cmd>bnext<CR>') --Creates a new tab
 map('n', '<C-c>', '<cmd>tabclose<CR>') --Creates a new tab
 
 map('n', '<C-f>', '<cmd>Format<CR>') --format the code
