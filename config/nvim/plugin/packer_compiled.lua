@@ -78,6 +78,7 @@ _G.packer_plugins = {
     config = { "vim.cmd[[ALEEnable]]" },
     loaded = false,
     needs_bufread = true,
+    only_cond = false,
     path = "/home/bshaw/.local/share/nvim/site/pack/packer/opt/ale"
   },
   ["cmp-buffer"] = {
@@ -87,6 +88,10 @@ _G.packer_plugins = {
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
@@ -100,9 +105,42 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/dracula"
   },
-  ["galaxyline.nvim"] = {
+  ["editorconfig-vim"] = {
     loaded = true,
-    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/editorconfig-vim"
+  },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/feline.nvim"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/formatter.nvim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/gruvbox.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/lush.nvim"
+  },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/monokai.nvim"
+  },
+  neorg = {
+    config = { "\27LJ\2\2¢\2\0\0\6\0\17\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\15\0005\2\3\0004\3\0\0=\3\4\0025\3\6\0005\4\5\0=\4\a\3=\3\b\0024\3\0\0=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\a\3=\3\14\2=\2\16\1B\0\2\1K\0\1\0\tload\1\0\0\21core.norg.dirman\1\0\0\15workspaces\1\0\0\1\0\1\17my_workspace\f~/neorg\24core.norg.concealer\18core.keybinds\vconfig\1\0\0\1\0\2\21default_keybinds\2\17neorg_leader\14<Leader>o\18core.defaults\1\0\0\nsetup\nneorg\frequire\0" },
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/neorg"
+  },
+  ["nord-vim"] = {
+    loaded = true,
+    path = "/home/bshaw/.local/share/nvim/site/pack/packer/start/nord-vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -148,6 +186,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: neorg
+time([[Config for neorg]], true)
+try_loadstring("\27LJ\2\2¢\2\0\0\6\0\17\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\15\0005\2\3\0004\3\0\0=\3\4\0025\3\6\0005\4\5\0=\4\a\3=\3\b\0024\3\0\0=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\a\3=\3\14\2=\2\16\1B\0\2\1K\0\1\0\tload\1\0\0\21core.norg.dirman\1\0\0\15workspaces\1\0\0\1\0\1\17my_workspace\f~/neorg\24core.norg.concealer\18core.keybinds\vconfig\1\0\0\1\0\2\21default_keybinds\2\17neorg_leader\14<Leader>o\18core.defaults\1\0\0\nsetup\nneorg\frequire\0", "config", "neorg")
+time([[Config for neorg]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")

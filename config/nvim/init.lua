@@ -1,17 +1,3 @@
-require('plugin')
---require('plugins.formatter')
-require('compe')
-require('statusline.eviline')
-require('treesitter')
+vim.cmd('set termguicolors')
+require('plugins.formatter')
 require('util')
-require('mappings')
--- Use completion-nvim in every buffer
---vim.cmd ('source ~/.config/nvim/viml.vim')
---require'lspconfig'.clangd.setup{on_attach=require'completion'.on_attach}
---require'lspconfig'.bashls.setup{on_attach=require'completion'.on_attach}
---require'lspconfig'.jdtls.setup{on_attach=require'completion'.on_attach}
---require'lspconfig'.sumneko_lua.setup{on_attach=require'completion'.on_attach}
---require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
-  -- init.lua
---require'lspconfig'.jdtls.setup{ cmd = { 'jdtls' }, on_attach = require'luasnip'.on_attach }
-

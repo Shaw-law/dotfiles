@@ -92,6 +92,7 @@ cmp.setup {
     { name = 'buffer' },
     { name = 'path' },
     { name = 'lspkind-nvim' },
+    { name = 'neorg' },
   },
 }
 local lspkind = require('lspkind')
